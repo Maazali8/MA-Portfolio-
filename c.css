@@ -549,6 +549,7 @@ display: flex;
     color:white;
     left: 20px;
     position: absolute;
+    left: 190px;
 }
 
 .contact input, .contact textarea {
@@ -592,16 +593,20 @@ mix-blend-mode: multiply;
 #contact-loc{
 width: 100%;
 display: flex;
+justify-content: center;
+align-items: center;
+
 
 }
 .contact12{
-
+margin: auto;
   width: 100%;
-  display: flex;
-  justify-content:space-evenly;
-  align-items: center;
-}
 
+display: grid;
+place-items: center;
+  
+ 
+}
 .contact-card {
   background-color: #fec86a;
 
