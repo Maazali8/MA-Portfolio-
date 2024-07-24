@@ -335,7 +335,7 @@ span{
 #project-section h2{
   font-size: 56px;
   font-weight: 600;
-  color: #fbfbfb;
+  color: #ffffff;
   font-family: "Libre Baskerville", serif;
 position: relative;
 left: 30px;
@@ -351,7 +351,7 @@ left: 30px;
 }
 .project-section {
   height: 100%;
-  background: #848484e4;
+  background:  #34353b;
 }
 .container1 {
   max-width: 1200px;
@@ -589,15 +589,8 @@ a.card {
   flex-direction: row;
   align-items: center;
   justify-content:center;
-  display: flex;
-  
-  
+  display: flex; 
 }
-
-
-
-
-
 .contact-card {
   background-color: #fec86a;
 display: flex;
@@ -661,6 +654,9 @@ display: flex;
             50% { border-color:#fec86a; }
         }
 /* Contact Section */
+.fullcontact{
+  background:  #000000;
+}
 
 .contact form {
     max-width: 600px;
@@ -796,13 +792,6 @@ p{
   
   }
 }
-
-
-
-
-
-
-
 .landing {
   display: flex;
   height: 90vh;
