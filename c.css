@@ -175,6 +175,7 @@ header nav ul li .active {
   font-weight: 400;
   font-size: 32px;
   margin-left: 10vw;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .landing .intro h3 span {
@@ -323,6 +324,7 @@ span{
   font-size: 24px;
   font-weight: 400;
   color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
   
 }
 /* Projects section */
