@@ -4,9 +4,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-a{
-  text-decoration: none;
-}
+
 
 html {
   scroll-behavior: smooth;
@@ -79,44 +77,153 @@ header nav ul li a {
 
 header nav ul li a:hover {
   color: #fbfbfb;
+  text-decoration: none;
 }
 
 header nav ul li .active {
   color: #fbfbfb;
 }
+
+/* new nev bar */
+.newnev{
+  display: none;
+}
+.main_box{
+  background-image: url(photo.jpg);
+  height: 30vh;
+background-size: cover;
+display: none;
+}
+.sidebar_menu{
+  width: 300px;
+  height: 50vh;
+background: #2825258e;
+position: absolute;
+left: -300px;
+border-radius: 10px;
+}
+
+.sidebar_menu .menu{
+  height: 60px;
+  position: absolute;
+  width: 100%;
+  top: 80px;
+
+
+}
+.sidebar_menu li{
+padding: 3px 15px;
+height: 50px;
+left: 5px;
+
+
+
+}
+.sidebar_menu li:hover{
+  box-shadow: 0px 0px 3px white;
+  width: 270px;
+
+}
+.btn_two i{
+  color: gray;
+  font-size: large;
+  line-height: 60px;
+  position: absolute;
+  left:270px;
+top: 2.9px;
+cursor: pointer;
+}
+.btn_two i:hover{
+  transform: scale(1.5);
+
+
+}
+.btn_one{
+color: #ffffff;
+font-size: 30px;
+font-weight: 700;
+line-height: 16px;
+position: absolute;
+top: 15px;
+left: 10px;
+
+
+}
+.btn_one i{
+
+  cursor: pointer;
+}
+
+.sidebar_menu .logo a{
+  width: 250px;
+  height: 40px;
+position: absolute;
+
+text-decoration: none;
+font-size: 20px;
+color: #ffffff;
+font-weight: 80px;
+position: absolute;
+top:20px;
+left: 50px;
+
+
+}
+.menu{
+  color: #ffffff;
+  width: 100%;
+  top: px;
+  font-size: large;
+}
+
+.social_media{
+
+color: #000000;
+position:absolute;
+left: 75px;
+opacity: 0.5;
+bottom: 50px;
+
+}
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
+.social_media i{
+  color: #e7e7e7;
+  padding: 0px 5px;
+
+}
+.social_media i:hover{
+  transform: scale(1.2);
+  box-shadow: 0px 0px 3px white;
+
+}
+#check:checked ~ .sidebar_menu {
+  left: 0;
+  transition: all 0.6s linear ;
+
+}
+
+#check:checked ~ .btn_one i{
+
+opacity: 0;
+
+}
+#check{
+  position: absolute;
+  left: -50px;
+}
+
+
+
+
 .wrap-input-17 * {
   box-sizing: border-box;
   
  }
- @media (max-width:430px) {
-  .skill-card h2 {
-    font-size: 13px;
-    font-weight: 300;
-    color: #ffffff;
-    
-  }
-  .about .description p {
-    color: #fbfbfb;
-    font-size: 20px;
-    margin-top: 0px;
-  
-  }
-  header {
-    height: 100vh;
-    padding: 36px 100px;
-    background-image: url(asset/model_bw.png);
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 50vw; 
-  
-  }
 
-  
-}
-
- 
- .wrap-input-17 .search-box{
+.wrap-input-17 .search-box{
   width: fit-content;
   height: fit-content;
   position: relative;
@@ -349,7 +456,7 @@ span{
 }
 
 .skill-card h2 {
-  font-size: 24px;
+  font-size: 30vm;
   font-weight: 400;
   color: #ffffff;
   font-family: 'Times New Roman', Times, serif;
@@ -808,7 +915,7 @@ p{
 .java{  width: 50%;
   background-color: #fea101;
 }
-
+  
 /* scroller bar */
 
 ::-webkit-scrollbar{
@@ -821,4 +928,189 @@ p{
 ::-webkit-scrollbar-track{
   border-radius: 7px;
 }
+@media screen and (max-width:430px) {
+  .skill-card h2 {
+    font-size: 13px;
+    font-weight: 300;
+    color: #ffffff;
+    
+  }
+ 
+  .about{
+    display:inline-block;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 60vm;
+  }
+  .intro h3{
+  max-width: 0px;
+  position:relative;
+  right:100px;
+  font-size: small;
+  }
+  .intro button{
+    position: relative;
+    right: 90px;
+  }
+  .intro span{
+    font-size: small;
+  }
+header nav{
+  display: none;
+}
+
+  .socials{
+   
+    position: relative;
+    left: 70px;
+  }
+  nav{
+    display: none;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+
+}
+.newnev{display: block;}
+.main_box{
+    background-image: url(photo.jpg);
+    height: 1vh;
+background-size: cover;
+display: block;
+}
+.sidebar_menu{
+    width: 300px;
+    height: 60vh;
+background:#000000;
+position: absolute;
+left: -300px;
+z-index: 22;
+
+}
+
+.sidebar_menu .menu{
+    height: 60px;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+
+
+}
+.sidebar_menu li{
+padding: 3px 15px;
+height: 50px;
+left: 5px;
+
+
+
+}
+.sidebar_menu li:hover{
+    box-shadow: 0px 0px 3px white;
+    width: 270px;
+
+}
+.btn_two i{
+    color: gray;
+    font-size: large;
+    line-height: 60px;
+    position: absolute;
+    left:270px;
+ top: 2.9px;
+ cursor: pointer;
+}
+.btn_two i:hover{
+    transform: scale(1.5);
+
+
+}
+.btn_one{
+ color: #ffffff;
+ font-size: 30px;
+ font-weight: 700;
+ line-height: 16px;
+ position: absolute;
+ top: 15px;
+ left: 10px;
+
+
+}
+.btn_one i{
+
+    cursor: pointer;
+}
+
+.sidebar_menu .logo a{
+    width: 250px;
+    height: 40px;
+position: absolute;
+
+text-decoration: none;
+font-size: 20px;
+color: #ffffff;
+font-weight: 80px;
+position: absolute;
+top:20px;
+left: 50px;
+
+
+}
+.menu{
+    color: #ffffff;
+    width: 100%;
+    top: px;
+    font-size: large;
+}
+
+.social_media{
+
+color: #000000;
+position:absolute;
+left: 75px;
+opacity: 0.5;
+bottom: 50px;
+
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+ .menu a:hover{
+  text-decoration: none;
+  color: white;
+}
+.menu li:hover{
+  transform: scale(1.1);
+}
+.social_media i{
+    color: #e7e7e7;
+    padding: 0px 5px;
+
+}
+.social_media i:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 3px white;
+
+}
+#check:checked ~ .sidebar_menu {
+    left: 0;
+    transition: all 0.6s linear ;
+
+}
+
+#check:checked ~ .btn_one i{
+
+opacity: 0;
+
+}
+#check{
+    position: absolute;
+    left: -50px;
+}
+
+
+
+ /* skill section */
+
+ }
 
