@@ -93,7 +93,14 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
-  
+  let checkbox = document.querySelector('#check'); // Select the checkbox element
+let slide = document.querySelector('.sidebar_menu'); // Select the sidebar menu
+let cont = document.querySelector('.sidebar_menu ul'); // Select the ul inside the sidebar menu
+
+cont.addEventListener("click", () => {
+    checkbox.checked = false; // Uncheck the checkbox when the ul is clicked
+});
+
 
 
 
