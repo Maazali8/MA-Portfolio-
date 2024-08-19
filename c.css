@@ -5,7 +5,6 @@ padding: 0%;
   box-sizing: border-box;
 }
 
-
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -20,7 +19,7 @@ body {
 
 header {
   height: 100vh;
-  padding: 36px 100px;
+  padding: 3px 100px ;
   background-image: url(asset/model_bw.png);
   background-position: right;
   background-size: contain;
@@ -51,7 +50,7 @@ header nav img {
 header nav ul {
   display: flex;
 margin: auto;
-height: 32px;
+height: 36px;
 width: 600px;
 backdrop-filter:blur(50px);
 border-radius: 11px;
@@ -115,14 +114,10 @@ border-radius: 10px;
 padding: 3px 15px;
 height: 50px;
 left: 5px;
-
-
-
 }
 .sidebar_menu li:hover{
   box-shadow: 0px 0px 3px white;
   width: 270px;
-
 }
 .btn_two i{
   color: gray;
@@ -135,8 +130,6 @@ cursor: pointer;
 }
 .btn_two i:hover{
   transform: scale(1.5);
-
-
 }
 .btn_one{
 color: #ffffff;
@@ -146,11 +139,8 @@ line-height: 16px;
 position: absolute;
 top: 15px;
 left: 10px;
-
-
 }
 .btn_one i{
-
   cursor: pointer;
 }
 
@@ -403,9 +393,9 @@ span{
 }
 
 .skills {
-  display:grid;
-  padding: 50px 100px;
+  display:block;
   background: #000;
+  width: 100%;
 
 }
 
@@ -734,10 +724,20 @@ display: flex;
   
 }
 .ab{
+  cursor: pointer;
     position:absolute;
     left: 650px;
     top: 59px;
     filter: grayscale(100%);
+    animation: float 2s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
 }
 .ab:hover{
     filter: grayscale(0);
@@ -925,18 +925,29 @@ p{
   border-radius: 7px;
 }
 @media screen and (max-width:430px) {
+ 
   *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
   }
   .skill-card h2 {
-    font-size: 13px;
+    font-size:2rem;
     font-weight: 300;
     color: #ffffff;
     
   }
- 
+  .cards{
+   
+  }
+  .skill-card{
+height: 60%;
+  width:45%;
+    display: flex;
+  }
+ .skills h1{
+  font-size:50px;
+ }
   .about{
     display:inline-block;
     flex-wrap: nowrap;
@@ -964,9 +975,8 @@ header nav{
 }
 
   .socials{
-   
     position: relative;
-    left: 70px;
+    left:25%
   }
   nav{
     display: none;
