@@ -225,8 +225,7 @@ opacity: 0;
   outline: none;
   border-radius: 25px;
   transition: all .5s ease-in-out;
-  background-color: 
- #fff;
+  background-color: #fec86a;
   padding-right: 40px;
   color:
  #fff;
@@ -381,7 +380,7 @@ bottom: 40px;
 .about .description p {
   color: #fbfbfb;
   font-size: 20px;
-  margin-top: 20px;
+  margin-top: 17px;
 
 }
 
